@@ -1,0 +1,17 @@
+.welcome-msg {
+    text-align: center;
+    margin-top: 10%;
+}
+
+.entry {
+    background-color: #00322b;
+}
+
+a {
+    color: white;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #cfdd00;
+}
