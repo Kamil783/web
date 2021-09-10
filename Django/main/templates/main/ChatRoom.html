@@ -1,0 +1,198 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Herten</title>
+    <link rel="shortcut icon" href="{% static 'Assets/image/icon3.png' %}" type="image/png">
+    <link rel="stylesheet" href="{% static 'Assets/css/main.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'Assets/css/chat_room.css' %}" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@500&display=swap">
+    <script src="{% static 'Assets/js/chat_room.js' %}"></script>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <ul class="navbar-elements">
+                <li class="navbar-element">
+                    <a href="/massenger">Messenger</a>
+                </li>
+                <li class="navbar-element">
+                    <a href="/calendar">Tasks</a>
+                </li>
+                <li class="navbar-element logo">
+                    <a href="/">
+                        <img src="{% static 'Assets/image/logo2.png' %}">
+                    </a>
+                </li>
+                <li class="navbar-element">
+                    <a href="/teams">Teams</a>
+                </li>
+                <li class="navbar-element">
+                    <a href="/games">Games</a>
+                </li>
+            </ul>
+            <div class="dropdown" style="float:right;">
+                <button class="dropbtn"><img src="{% static 'Assets/image/menu2.png' %}"></button>
+                <div class="dropdown-content">
+                  <a href="#">Profile</a>
+                  <a href="#">Friends</a>
+                  <a href="#">Logout</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="chat-rooms-page-header">
+            <h4>Chat</h4>
+            <a href="#"><h3 class="chat-rooms-create">Create room</h3></a>
+        </div>
+        <section class="chat-rooms-page-interface">
+            <div class="chat-rooms-navigation">
+                <h4 class="chat-rooms-text">ROOMS</h4>
+                <span class="chat-rooms-line"></span>
+                <div class="rooms-btn">
+                    <button id="switch-btn-myrooms" class="btn-active" onclick="room_list_switch(false)">my rooms</button>
+                    <button id="switch-btn-allrooms" onclick="room_list_switch(true)">all rooms</button>
+                </div>
+                <div id="block-myrooms" style="display: block;">
+                    <div class="chat-rooms">
+                        <a href="#"><h3 class="chat-rooms-room"> asdadsdd </h3></a>
+                        <a href="#"><h3 class="chat-rooms-room"> asdadsdd </h3></a>
+                        <a href="#"><h3 class="chat-rooms-room"> asdadsdd </h3></a>
+                        <a href="#"><h3 class="chat-rooms-room"> asdadsdd </h3></a>
+                        <a href="#"><h3 class="chat-rooms-room"> asdadsdd </h3></a>
+                        <a href="#"><h3 class="chat-rooms-room"> asdadsdd </h3></a>
+                        <a href="#"><h3 class="chat-rooms-room"> asdadsdd </h3></a>
+                        <a href="#"><h3 class="chat-rooms-room"> asdadsdd </h3></a>
+                        <a href="#"><h3 class="chat-rooms-room"> asdadsdd </h3></a>
+                    </div>
+                </div>
+                <div id="block-allrooms" style="display: none;">
+                    <div class="chat-rooms">
+                        <a href="#"><h3 class="chat-rooms-room"> asdadsdd </h3></a>
+                        <a href="#"><h3 class="chat-rooms-room"> asdadsdd </h3></a>
+                        <a href="#"><h3 class="chat-rooms-room"> asdadsdd </h3></a>
+                    </div>
+                </div>
+                <h4 class="chat-rooms-text">Direct messages</h4>
+                <span class="chat-rooms-line"></span>
+                <div class="chat-rooms">
+                    <a href="#"><h3 class="chat-rooms-room"> asdadsdd </h3></a>
+                    <a href="#"><h3 class="chat-rooms-room"> asdadsdd </h3></a>
+                    <a href="#"><h3 class="chat-rooms-room"> asdadsdd </h3></a>
+                    <a href="#"><h3 class="chat-rooms-room"> asdadsdd </h3></a>
+                    <a href="#"><h3 class="chat-rooms-room"> asdadsdd </h3></a>
+                    <a href="#"><h3 class="chat-rooms-room"> asdadsdd </h3></a>
+                    <a href="#"><h3 class="chat-rooms-room"> asdadsdd </h3></a>
+                    <a href="#"><h3 class="chat-rooms-room"> asdadsdd </h3></a>
+                    <a href="#"><h3 class="chat-rooms-room"> asdadsdd </h3></a>
+                </div>
+                
+
+            </div>
+            <div class="messages-interface">
+                <div class="messages-header">
+                    <h3 class="header-room-name">C# - best!</h3>
+                    <h3 class="messages-leave"><a href="#">leave</a></h3>
+                </div>
+                <span class="messages-line"></span>
+                <div class="messages">
+                    <div class="message">
+                        <div class="dropdown-msg">
+                            <a href="#" class="dropbtn-msg"><img src="./Assets/image/profile_ico_drop.svg"></a>
+                            <div class="dropdown-msg-content">
+                                  <a href="#">profile</a>
+                                  <a href="#">duel</a>
+                                  <a href="#">kick</a>
+                                  <a href="#">ban</a>
+                            </div>
+                        </div>
+                        <div class="message-field">
+                            <h3>dasdsadsmdlkaljksjkdljddddsa</h3>
+                            <h3 class="message-info"><a href="#">Deddara</a><a href="#">[_21_]</a></h3>
+                            <h3 class="message-info">12/03/21 14:13</h3>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="dropdown-msg">
+                            <a href="#" class="dropbtn-msg"><img src="./Assets/image/profile_ico_drop.svg"></a>
+                            <div class="dropdown-msg-content">
+                                  <a href="#">profile</a>
+                                  <a href="#">duel</a>
+                                  <a href="#">kick</a>
+                                  <a href="#">ban</a>
+                            </div>
+                        </div>
+                        <div class="message-field">
+                            <h3>dasdsadsmdlkaljksjkdljddddsa</h3>
+                            <h3 class="message-info"><a href="#">Deddara</a><a href="#">[_21_]</a></h3>
+                            <h3 class="message-info">12/03/21 14:13</h3>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="dropdown-msg">
+                            <a href="#" class="dropbtn-msg"><img src="./Assets/image/profile_ico_drop.svg"></a>
+                            <div class="dropdown-msg-content">
+                                  <a href="#">profile</a>
+                                  <a href="#">duel</a>
+                                  <a href="#">kick</a>
+                                  <a href="#">ban</a>
+                            </div>
+                        </div>
+                        <div class="message-field">
+                            <h3>dasdsadsmdlkaljksjkdljddddsa</h3>
+                            <h3 class="message-info"><a href="#">Deddara</a><a href="#">[_21_]</a></h3>
+                            <h3 class="message-info">12/03/21 14:13</h3>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="dropdown-msg">
+                            <a href="#" class="dropbtn-msg"><img src="./Assets/image/profile_ico_drop.svg"></a>
+                            <div class="dropdown-msg-content">
+                                  <a href="#">profile</a>
+                                  <a href="#">duel</a>
+                                  <a href="#">kick</a>
+                                  <a href="#">ban</a>
+                            </div>
+                        </div>
+                        <div class="message-field">
+                            <h3>dasdsadsmdlkaljksjkdljddddsa</h3>
+                            <h3 class="message-info"><a href="#">Deddara</a><a href="#">[_21_]</a></h3>
+                            <h3 class="message-info">12/03/21 14:13</h3>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="dropdown-msg">
+                            <a href="#" class="dropbtn-msg"><img src="./Assets/image/profile_ico_drop.svg"></a>
+                            <div class="dropdown-msg-content">
+                                  <a href="#">profile</a>
+                                  <a href="#">duel</a>
+                                  <a href="#">kick</a>
+                                  <a href="#">ban</a>
+                            </div>
+                        </div>
+                        <div class="message-field">
+                            <h3>dasdsadsmdlkaljksjkdljddddsa</h3>
+                            <h3 class="message-info"><a href="#">Deddara</a><a href="#">[_21_]</a></h3>
+                            <h3 class="message-info">12/03/21 14:13</h3>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                <span class="messages-line" style="margin-top: 5px;"></span>
+
+                <div class="send-message">
+                    <input type="text" id="name" class="msg-input">
+                    <button class="send-message-button">send</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <span>1011001 1101111 1110101 100000 1100001 1110010 1100101 100000 1110100 1101000 1100101 100000 1100010 1100101 1110011 1110100 100001</span>
+    </footer>
+</body>

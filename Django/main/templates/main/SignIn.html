@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Herten</title>
+    <link rel="shortcut icon" href="{% static 'Assets/image/icon3.png' %}" type="image/png">
+    <link rel="stylesheet" href="{% static 'Assets/css/main.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'Assets/css/entry.css' %}" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@500&display=swap">
+</head>
+
+<body class="entry">
+    <main>
+        <section class="entry-elements">
+            <div class="entry-elements-logo">
+                <img src="{% static 'Assets/image/logo4.png' %}" class="entry-elements-logo-img">
+            </div>
+            <div class="entry-elements-reg"> 
+                <form method="POST">         
+                    {% csrf_token %}
+                    <hr>
+                        {{ form.as_p }}
+                    <hr>
+                    <button type="submit" class="registerbtn">Go!</button>
+
+                    <div class="container signin">
+                        <p class="signin-text">Don't have an account? <a href="signup">Sign up</a>.</p>
+                    </div>
+                    <button type="submit" class="githubbtn">
+                        <img src="{% static 'Assets/image/github.png' %}" class="githubbtn-img">
+                    </button>
+                </form>
+            </div>
+            
+        </section>
+    </main>
+</body>
+</html>

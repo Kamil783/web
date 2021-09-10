@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Herten</title>
+    <link rel="shortcut icon" href="./Assets/image/icon3.png" type="image/png">
+    <link rel="stylesheet" href="./Assets/css/main.css" type="text/css">
+    <link rel="stylesheet" href="./Assets/css/snake.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@500&display=swap">
+    
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <ul class="navbar-elements">
+                <li class="navbar-element">
+                    <a href="#">Messenger</a>
+                </li>
+                <li class="navbar-element">
+                    <a href="#">Calendar</a>
+                </li>
+                <li class="navbar-element logo">
+                    <a href="#">
+                        <img src="./Assets/image/logo2.png">
+                    </a>
+                </li>
+                <li class="navbar-element">
+                    <a href="#">Teams</a>
+                </li>
+                <li class="navbar-element">
+                    <a href="#">Games</a>
+                </li>
+            </ul>
+            <div class="dropdown" style="float:right;">
+                <button class="dropbtn"><img src="./Assets/image/menu2.png"></button>
+                <div class="dropdown-content">
+                  <a href="#">Profile</a>
+                  <a href="#">Friends</a>
+                  <a href="#">Logout</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="time">
+            <p id="timer">4:59</p>
+        </div>
+        <div class="scr">
+            <p id="score">Score: 100</p>
+        </div>
+        <canvas id="mc" width="1280" height="720"></canvas>
+        <script src="./Assets/js/snake.js"></script>
+    </main>
+</body>
+</html>

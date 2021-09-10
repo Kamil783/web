@@ -1,0 +1,163 @@
+body {
+    font-size: 25px;
+    letter-spacing: 1px; 
+    margin: 0;
+    padding: 0;
+    scrollbar-color: #00322b #cfdd00;
+}
+
+h1, h2, h3, h4, a, p, label, input, button, ul {
+    font-family: 'Cormorant Unicase', serif;
+    color: #cfdd00;
+    letter-spacing: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+h1 {
+    margin-top: 0px;
+    font-size: 159px;
+    color: white;
+}
+
+h4 {
+    font-size: 35px;
+    font-weight: normal;
+    padding: 0px;
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 35px;
+    padding: 0px;
+}
+
+header {
+    background-color: white;
+}
+
+header a {
+    text-decoration:underline;
+    color:#00322b;
+}
+
+main {
+    background-color: #00322b;
+    padding-left: 350px;
+    padding-top: 20px;
+    padding-right: 350px;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+}
+.navbar-elements {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0px;
+    width: 100%;
+    padding: 0px;
+    list-style-type: none;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.navbar-elements a {
+    font-size: 25px;
+}
+
+.logo {
+    padding-top: 20px;
+    margin-left: 80px !important;
+}
+
+.dropdown-btn {
+    margin-left: auto;
+}
+
+.dropbtn {
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    outline: none;
+  }
+
+.dropbtn img {
+    width: 40px;
+    height: 40px;
+}
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 50px;
+    margin-right: 20px;
+    margin-bottom: 200px;
+    
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color:#00322b;
+    min-width: 170px;
+    min-height: 150px;
+    z-index: 1;
+    border: 4px #cfdd00 solid;
+    font-size: 25px;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.dropdown-content a{
+    color: #cfdd00;
+    display: block;
+    padding-left: 0px;
+    letter-spacing: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+  
+.dropdown:hover .dropdown-content {display: flex;}
+
+::-webkit-scrollbar {
+    width: 10px; 
+    height: 8px; 
+    background-color: #00322b;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #cfdd00;
+}
+
+footer {
+    font-family: 'Cormorant Unicase', serif;
+    background-color: #00322b;
+    color: #cfdd00;
+    font-size: 28.3px;
+    padding-top: 100px;
+    padding-bottom: 30px;   
+    text-align: center;   
+}
+
+button {
+    border: none;
+    padding: 0px;
+    line-height: 0;
+}
+
+button:hover {
+    border: none;
+    outline: none;
+}
+
+button:focus {
+    outline:none;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Herten</title>
+    <link rel="shortcut icon" href="./Assets/image/icon3.png" type="image/png">
+    <link rel="stylesheet" href="./Assets/css/main.css" type="text/css">
+    <link rel="stylesheet" href="./Assets/css/settings.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@500&display=swap">
+    <script src="./Assets/js/friend_page.js"></script>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <ul class="navbar-elements">
+                <li class="navbar-element">
+                    <a href="#">Messenger</a>
+                </li>
+                <li class="navbar-element">
+                    <a href="#">Calendar</a>
+                </li>
+                <li class="navbar-element logo">
+                    <a href="#">
+                        <img src="./Assets/image/logo2.png">
+                    </a>
+                </li>
+                <li class="navbar-element">
+                    <a href="#">Teams</a>
+                </li>
+                <li class="navbar-element">
+                    <a href="#">Games</a>
+                </li>
+            </ul>
+            <div class="dropdown" style="float:right;">
+                <button class="dropbtn"><img src="./Assets/image/menu2.png"></button>
+                <div class="dropdown-content">
+                  <a href="#">Profile</a>
+                  <a href="#">Friends</a>
+                  <a href="#">Logout</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="profile-settings">
+        <h2 class="profile-settings-title">Profile settings</h2>
+        <section class="profile-settings-section personal-information">
+            <h2 class="profile-settings-title">Personal-information</h2>
+            <form class="personal-information-form" action="">
+                <div class="personal-information-form-filed">
+                    <label for="email" class="personal-information-field-label">Email</label>
+                    <input type="text" id="email" class="personal-information-field-input">
+                    <button class="personal-information-form-button">create</button>
+                </div>
+
+                <div class="personal-information-form-filed">
+                    <label for="nickname" class="personal-information-field-label">Nickname</label>
+                    <input type="text" id="nickname" class="personal-information-field-input">
+                    <button class="personal-information-form-button">create</button>
+                </div>
+            </form>
+            <a href="#" class="personal-information-link">Change password</a>
+            <a href="#" class="personal-information-link">Turn on two-step authentication</a>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Herten</title>
+    <link rel="shortcut icon" href="{% static 'Assets/image/icon3.png' %}" type="image/png">
+    <link rel="stylesheet" href="{% static 'Assets/css/main.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'Assets/css/error.css' %}" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@500&display=swap">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <ul class="navbar-elements">
+                <li class="navbar-element">
+                    <a href="/messenger">Messenger</a>
+                </li>
+                <li class="navbar-element">
+                    <a href="/calendar">Calendar</a>
+                </li>
+                <li class="navbar-element logo">
+                    <a href="/">
+                        <img src="{% static 'Assets/image/logo2.png' %}">
+                    </a>
+                </li>
+                <li class="navbar-element">
+                    <a href="/teams">Teams</a>
+                </li>
+                <li class="navbar-element">
+                    <a href="/games">Games</a>
+                </li>
+            </ul>
+            <div class="dropdown" style="float:right;">
+                <button class="dropbtn"><img src="{% static 'Assets/image/menu2.png' %}"></button>
+                <div class="dropdown-content">
+                  <a href="#">Profile</a>
+                  <a href="#">Friends</a>
+                  <a href="#">Logout</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <img src="{% static 'Assets/image/404back .jpg' %}" class="main-img">
+    </main>

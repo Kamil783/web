@@ -1,0 +1,15 @@
+canvas {
+    background: #092622;
+    display: block;
+    margin-right: 200px;
+    border: 1px white solid;
+}
+
+.time{
+    margin-left: 47%;
+    height: 100px;
+}
+.scr{
+    margin-left: 43%;
+    height: 100px;
+}

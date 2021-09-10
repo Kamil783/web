@@ -1,0 +1,127 @@
+.welcome-msg {
+    text-align: center;
+    margin-top: 10%;
+}
+
+p, b, input, label, ul {
+    color: #00322b !important;
+}
+
+label {
+    font-size: 27px;
+    font-weight: bold;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.entry {
+    background-color: #00322b;
+}
+
+a {
+    color: #cfdd00;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #cfdd00;
+}
+
+.entry-elements {
+    height: 800px;
+    width: 1000px;
+    background-color: white;
+    margin-top: 10%;
+    margin-left: 10%;
+    border-radius: 50px;
+}
+
+.entry-elements-reg {
+    height: 500px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.entry-elements-logo {
+    margin-left: 40%;
+}
+
+.entry-elements-logo-img {
+    height: 150px;
+    width: 150px;
+}
+
+.container {
+    padding: 16px;
+    background-color: white;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+.registerbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.registerbtn:hover {
+    opacity: 1;
+}
+
+
+.signin {
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.signin-text {
+    font-size: 20px;
+}
+
+.githubbtn {
+    margin-left: 45%;
+    cursor: pointer;
+    background-color: white;
+    margin-top: 20px;
+}
+
+.githubbtn-img {
+    height: 80px;
+    width: 80px;
+}
+
+.helptext {
+    display: none;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+    font-size: small;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
